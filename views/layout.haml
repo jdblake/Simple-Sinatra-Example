@@ -1,0 +1,22 @@
+%html
+  %head
+    %title Simple Sinatra Example with AJAX!
+    %script{:type => "text/javascript", :src => %"http://code.jquery.com/jquery-1.5.min.js"}
+    :javascript
+      var interval;
+ 
+      function updateCount() {
+        $("#record-list").load("/dumpArray", {});
+      }
+ 
+      function startUpdate() {
+        clearInterval(interval);
+        interval = setInterval( function(){updateCount();}, 1000);
+      }
+ 
+      $(document).ready(function(){
+        startUpdate();
+      });
+  %body
+    =yield
+
