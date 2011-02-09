@@ -68,6 +68,11 @@ end
 DataMapper.finalize
 
 # Create the db/tables if they don't exist
+#
+# Note that you can remove this line from your code if you want to manually create the db (useful if you want
+# to do it only once. You can write your sinatra app, and the fire up irb from the application's home
+# directory with the app code auto-loaded ($> irb -r simple.rb)... Then just type the line below and the db
+# is ready to go. You would only have to do this once.
 DataMapper::auto_upgrade!
 
 # Set up the logger. To do so, set the root of the app, and set the log level:

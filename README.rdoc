@@ -31,6 +31,7 @@ appropriate directories.
 * Move the Javascript to index.haml (it is the <em>only</em> place that uses it!)
 * Testing
 * Add delete to api functions
+* Add config.ru to facilitate deployment of app
 * Others?
 
 == Usage:
@@ -57,12 +58,13 @@ appropriate directories.
 
     http://localhost:4567/
 
-6. Use the API to add records to the db
+6. Use the API to add records to the db, e.g.
 
     http://localhost:4567/set/jon/33
 
 == Other Ideas
 
-You can access the database through the ruby interactive shell (irb) and change the db that way.
+You can access the database through the ruby interactive shell (<b>irb</b> or even better:
+<b>dm-cli</b>) and change the db that way.
 
-
+(You have a lot more control over the db this way)

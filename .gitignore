@@ -1,0 +1,4 @@
+# Ignore all swap files, log files, and db files
+*.swp
+*.log
+*.sqlite3
