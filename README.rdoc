@@ -64,7 +64,45 @@ appropriate directories.
 
 == Other Ideas
 
-You can access the database through the ruby interactive shell (<b>irb</b> or even better:
-<b>dm-cli</b>) and change the db that way.
+You can access the database through the ruby interactive shell (<b>irb</b>) and change the db that way.
 
-(You have a lot more control over the db this way)
+This gives you a <em>lot</em> of control over the db. You load a file into <pre>irb</pre> using the
+<pre>-r</pre> switch:
+
+    irb -r simple.rb
+
+This loads all your models, etc. and connects to the db. You can then add/remove records using DataMapper
+calls:
+
+    Student.create(:name => "Jon", :grade => 3)
+
+and
+
+	Student.first(:name => "Jon").destroy
+
+Look at the {DataMapper documentation}[http://datamapper.org/docs/] for help on interacting with a
+DataMapper db.
+
+One way to test that the simple example validation (that the grade is an integer) works is to try the
+following when you are in irb:
+
+    s = Student.new(:name => "Jon", :grade => "test")
+    s.save
+
+You will get <pre>false</pre> because the validation failed.
+
+Two things to note:
+
+1. If you tried this:
+
+     Student.create(:name => "Jon", :grade => "test")
+
+the record would not be saved in the db because of the validation error, but you would not get immediate
+feedback about it lie you do when you go the <pre>new/save</pre> route.
+
+2. If you had tried this:
+
+     Student.create(:name => "Jon", :grade => "4")
+
+the record <u>would</u> be saved because the string <pre>"3"</pre> can be implicitly converted to an integer
+value
