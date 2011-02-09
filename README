@@ -1,0 +1,8 @@
+This is a simple sinatra app. It is a place to try out features of simple web applications (and to
+demonstrate some interesting things--at least in my opinion--about sinatra. There isn't a lot here yet,
+but I will be adding more.
+
+Note that I habe tried to commet as much as possible.
+
+The project has empty log and db folders. When you first run the app a db and two logs are created in the
+appropriate directories.
