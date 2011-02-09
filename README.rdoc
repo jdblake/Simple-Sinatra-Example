@@ -1,10 +1,10 @@
 = Simple-Sinatra
 
-A very simple sinatra[http://sinatra.github.com/] application to demonstrate some basic features.
+A very simple sinatra[http://www.sinatrarb.com/] application to demonstrate some basic features.
 
 There isn't a lot here yet, but I will be adding more.
 
-_Note that I have tried to comment as much as possible in the code..._
+<em>Note that I have tried to comment as much as possible in the code...</em>
 
 The project has empty log and db folders. When you first run the app a db and the logs are created in the
 appropriate directories.
@@ -12,23 +12,23 @@ appropriate directories.
 == Things Included So Far:
 
 * Basic sinatra functionality
-* DataMapper for ORM
-  * The model is _very_ simple!
+* DataMapper[http://datamapper.org] for ORM
+  * The model is <em>very</em> simple!
   * There is one validation (to ensure that data is an integer)
   * The DataMapper logger is enabled
     * The DataMapper log goes to log/dm.log
-    * The log level is set to <debug>
-* Haml for markup
+    * The log level is set to <b>debug</b>
+* Haml[http://haml-lang.com/] for markup
 * Simple Ajax polling refresh listing elements in the db
   * Uses JQuery
-  * Javascript in the layout file
+  * Javascript located in the layout file
 
 == Things To Do/Add:
 
-* Sass
+* Sass[http://sass-lang.com/]
 * Authentication
 * Move the data models to a separate directory
-* Move the Javascript to index.haml (it is the +only+ place that uses it!)
+* Move the Javascript to index.haml (it is the <u>only</u> place that uses it!)
 * Others?
 
 == Usage:
