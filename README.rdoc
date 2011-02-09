@@ -28,9 +28,41 @@ appropriate directories.
 * Sass[http://sass-lang.com/]
 * Authentication
 * Move the data models to a separate directory
-* Move the Javascript to index.haml (it is the <u>only</u> place that uses it!)
+* Move the Javascript to index.haml (it is the <em>only</em> place that uses it!)
+* Testing
+* Add delete to api functions
 * Others?
 
 == Usage:
 
-Start up the 
+<em>This assumes that you have ruby and sinatra installed!</em>
+
+1. Install git locally if you haven't. You can find installation instructions {here}[http://help.github.com/].
+
+2. Clone this repository on your local machine:
+
+    git clone git://github.com/jdblake/Simple-Sinatra-Example.git
+
+3. cd to your local copy
+
+    cd Simple-Sinatra-Example
+
+4. Start the server
+
+    ruby simple.rb
+
+(The server starts on port 4567)
+
+5. Navigate to the index to see a list of the records in the database refreshed every second
+
+    http://localhost:4567/
+
+6. Use the API to add records to the db
+
+    http://localhost:4567/set/jon/33
+
+== Other Ideas
+
+You can access the database through the ruby interactive shell (irb) and change the db that way.
+
+
