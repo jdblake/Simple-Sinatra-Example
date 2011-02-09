@@ -66,8 +66,8 @@ appropriate directories.
 
 You can access the database through the ruby interactive shell (<b>irb</b>) and change the db that way.
 
-This gives you a <em>lot</em> of control over the db. You load a file into <pre>irb</pre> using the
-<pre>-r</pre> switch:
+This gives you a <em>lot</em> of control over the db. You load a file into <tt>irb</tt> using the
+<t>>-r</tt> switch:
 
     irb -r simple.rb
 
@@ -89,7 +89,7 @@ following when you are in irb:
     s = Student.new(:name => "Jon", :grade => "test")
     s.save
 
-You will get <pre>false</pre> because the validation failed.
+You will get <tt>false</tt> because the validation failed.
 
 Two things to note:
 
@@ -98,11 +98,11 @@ Two things to note:
      Student.create(:name => "Jon", :grade => "test")
 
 the record would not be saved in the db because of the validation error, but you would not get immediate
-feedback about it lie you do when you go the <pre>new/save</pre> route.
+feedback about it lie you do when you go the <tt>new/save</tt> route.
 
 2. If you had tried this:
 
      Student.create(:name => "Jon", :grade => "4")
 
-the record <u>would</u> be saved because the string <pre>"3"</pre> can be implicitly converted to an integer
+the record <b>would</b> be saved because the string <tt>"3"</tt> can be implicitly converted to an integer
 value
