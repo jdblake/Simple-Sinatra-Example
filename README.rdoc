@@ -9,6 +9,23 @@ There isn't a lot here yet, but I will be adding more.
 The project has empty log and db folders. When you first run the app a db and the logs are created in the
 appropriate directories.
 
+== Application Purpose
+
+This application creates a database of name/grade pairs. The names are <b><tt>strings</tt></b> and the
+grades must be <b><tt>integers</tt></b>. The db records are mapped to a <b><tt>Student</tt></b> class
+using DataMapper[http://datamapper.org].
+
+You can interact with the application with any browser using a simple URL API:
+
+    /get/<name>
+
+    /set/<name>/<grade>
+
+    /dumpString
+
+and the root of this web application displays a list of all entries in the db that is refreshed ever second
+using JQuery...
+
 == Things Included So Far:
 
 * Basic sinatra functionality
