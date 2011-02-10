@@ -39,6 +39,15 @@ using JQuery...
 * Simple Ajax polling refresh listing elements in the db
   * Uses JQuery
   * Javascript located in the layout file
+* Added a sinatra logger
+  * Programmers can explicity log messages
+  * Messages can be logged at several levels
+  * Messages appear in the log only if the log is active for that level
+  * Log files loated in the log directory
+  * Logs are named for the environment
+    * test
+    * development
+    * production
 
 == Things To Do/Add:
 
