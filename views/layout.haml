@@ -5,13 +5,13 @@
     :javascript
       var interval;
  
-      function updateCount() {
+      function updateList() {
         $("#record-list").load("/dumpArray", {});
       }
  
       function startUpdate() {
         clearInterval(interval);
-        interval = setInterval( function(){updateCount();}, 1000);
+        interval = setInterval( function(){updateList();}, 1000);
       }
  
       $(document).ready(function(){
