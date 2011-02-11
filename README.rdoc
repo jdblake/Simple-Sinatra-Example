@@ -6,8 +6,8 @@ There isn't a lot here yet, but I will be adding more.
 
 <em>Note that I have tried to comment as much as possible in the code...</em>
 
-The project has empty log and db folders. When you first run the app a db and the logs are created in the
-appropriate directories.
+The project has empty log and db folders. When you first run the app, a db and the two logs are created
+in the appropriate directories.
 
 == Application Purpose
 
@@ -25,6 +25,19 @@ You can interact with the application with any browser using a simple URL API:
 
 and the root of this web application displays a list of all entries in the db that is refreshed ever second
 using JQuery...
+
+== Gems Needed
+
+To run this simple example, you need to update to the latest {rubygems}[http://rubygems.org/]. To install
+rubygems--or to update to the latest version--follow the instructions on the rubygems
+{download page}[http://rubygems.org/pages/download]
+
+= sinatra
+= dm-core
+= dm-migrations
+= dm-validations
+= haml
+= sinatra/logger
 
 == Things Included So Far:
 
