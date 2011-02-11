@@ -32,12 +32,12 @@ To run this simple example, you need to update to the latest {rubygems}[http://r
 rubygems--or to update to the latest version--follow the instructions on the rubygems
 {download page}[http://rubygems.org/pages/download]
 
-= sinatra
-= dm-core
-= dm-migrations
-= dm-validations
-= haml
-= sinatra/logger
+    sinatra
+    dm-core
+    dm-migrations
+    dm-validations
+    haml
+    sinatra/logger
 
 == Things Included So Far:
 
